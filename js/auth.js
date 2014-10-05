@@ -1,5 +1,5 @@
 // Insert your CLIENT_ID of your project's client from Google Developers Console.
-var CLIENT_ID = '27880399977-qeah4h8q41s2rj9uf4sn99qqn3oulqit.apps.googleusercontent.com';
+var CLIENT_ID = '27880399977-ok3ldrejbm3mtr5kusrm4tkq6ffdmkgc.apps.googleusercontent.com';
 var SCOPES = 'https://www.googleapis.com/auth/drive';
 
 // Called when the client library is loaded to start the authorization flow.
@@ -36,13 +36,15 @@ function makeRequest() {
         function () {
             var request = gapi.client.drive.files.list(
                 {
-                    'q': 'title contains \'.fb2\' or title contains \'.fb2.zip\''
+                    'q': 'title contains \'.fb2\' and trashed = false'
                 }
             );
             request.execute(
                 function (responce) {
                     for (i = 0; i < responce.items.length; i++) {
-                        $(".list-group").append("<a href=\"#\" class=\"list-group-item\">" + responce.items[i].title + "</li>");
+                        if (/\W*\.fb2$/.test(responce.items[i].title) || /\W*\.fb2\.zip$/.test(responce.items[i].title)) {
+                            $(".list-group").append("<a href=\"#\" class=\"list-group-item\">" + responce.items[i].title + "</li>");
+                        }
                     }
                 }
             );
