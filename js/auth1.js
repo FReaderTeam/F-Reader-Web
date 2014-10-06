@@ -12,15 +12,15 @@ function handleClientLoad() {
 // Check if the current user has authorized the application.
 function checkAuth() {
     gapi.auth.authorize(
-        {'client_id': CLIENT_ID, 'scope': SCOPES, 'immediate': false},
+        {'client_id': CLIENT_ID, 'scope': SCOPES, 'immediate': true},
         handleAuthResult);
 }
 
 // Called when authorization server replies.
 function handleAuthResult(authResult) {
     if (authResult && !authResult.error) {
-        window.location.replace("../bool_collection.html")
-        //makeRequest();
+        //window.location.replace("../bool_collection.html")
+        makeRequest();
     }
     else {
         gapi.auth.init(function() {
