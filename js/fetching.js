@@ -16,10 +16,20 @@ function fillList(books) {
     }
 }
 
+function readBook(bookName) {
+    client.readFile(bookName, function (error, content, stat) {
+        if (error) {
+            alert('Book reading error: ' + error);
+        } else {
+            alert(content);
+        }
+    });
+}
+
 function openBook(obj) {
-        sessionStorage.book = obj.getAttribute("href");
-        alert(sessionStorage.book);
-        window.location.replace("book_view.html");
+        var bookName = obj.getAttribute("href");
+        alert(bookName);
+        readBook(bookName);
 }
 
 auth();
