@@ -5375,7 +5375,7 @@ button.close {
 .modal-open {
   overflow: hidden;
 }
-.modal {
+.waiting_modal {
   position: fixed;
   top: 0;
   right: 0;
@@ -5387,7 +5387,7 @@ button.close {
   -webkit-overflow-scrolling: touch;
   outline: 0;
 }
-.modal.fade .modal-dialog {
+.waiting_modal.fade .modal-dialog {
   -webkit-transition: -webkit-transform .3s ease-out;
        -o-transition:      -o-transform .3s ease-out;
           transition:         transform .3s ease-out;
@@ -5395,12 +5395,12 @@ button.close {
        -o-transform: translate3d(0, -25%, 0);
           transform: translate3d(0, -25%, 0);
 }
-.modal.in .modal-dialog {
+.waiting_modal.in .modal-dialog {
   -webkit-transform: translate3d(0, 0, 0);
        -o-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
-.modal-open .modal {
+.modal-open .waiting_modal {
   overflow-x: hidden;
   overflow-y: auto;
 }

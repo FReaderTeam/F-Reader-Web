@@ -1,0 +1,85 @@
+.b-reading {
+    font-style: normal;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: gray;
+    font-family: Helvetica;
+}
+
+i {
+    font-style: normal;
+}
+
+
+.b-reading .b-reading-book {
+    font-size: 14px;
+    max-width: 58em;    /* for the better reading */
+    margin: auto;
+    line-height: 2em;
+}
+
+.FictionBook {
+    display: block;
+}
+
+.FictionBook .description {
+    display: none;
+}
+
+.FictionBook .body {
+    display: block;
+}
+
+.FictionBook .body .title {
+    display: block;
+    font-size: 130%;
+}
+
+.FictionBook .body .title > .p {
+    display: block;
+    padding: 0.4em 0;
+    font-size: 120%;
+    color: black;
+}
+
+
+.FictionBook .body .section {
+    display: block;
+}
+
+.FictionBook .body .section .p {
+    display: block;
+    line-height: 2em;
+    color: black;
+    text-indent: 3em;
+    margin-bottom: 0.5em;
+}
+
+.FictionBook .binary {
+    display: none;
+}
+
+.FictionBook .cite {
+    display: block;
+    padding: 1em;
+    background-color: #eee;
+    font-size: 95%;
+    border-left:4px solid #aaa;
+    margin: 0.8em 0;
+}
+
+.FictionBook .cite .subtitle {
+    display: block;
+    margin-bottom: 0.5em;
+    font-style: italic;
+}
+
+.FictionBook .cite .text-author {
+    display: block;
+    text-align: right;
+}
