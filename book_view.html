@@ -17,8 +17,11 @@
     <script src="js/model/DropboxClient.js"></script>
     <script src="js/model/Book.js"></script>
     <script src="js/model/Parser.js"></script>
+	<script src="js/model/PositionFinder.js"></script>
+	
     <script src="lib/jquery.xslt.js"></script>
     <script src="js/view/BookView.js"></script>
+	
     <!--CSS-->
     <link rel="stylesheet" href="css/book_reading.css">
     <link rel="stylesheet" href="css/waiting.css">
@@ -29,12 +32,18 @@
             client.authentificate();
             var full_path = window.location.hash.substr(1);
             client.readFile(full_path, new BookView().show);
+			
+			var posFinder = new PositionFinder();
+			$( window ).scroll(function() {
+		console.log(posFinder.findCurrentChapterAndPosition());
+			});
         });
+		
     </script>
 
 </head>
 <body class="loading">
-    <div class="b-reading"></div>
+    <div class="b-reading" id="read_div"></div>
     <!--ELEMENT FOR WAITING-->
     <div class="waiting_modal"></div>
 </body>

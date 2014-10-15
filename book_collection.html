@@ -26,6 +26,21 @@
             var client = new DropboxClient();
             client.authentificate();
             client.findFb2Files(new BookLibraryView().fillBookList);
+			
+			var uploadForm = document.getElementById('upload-form');
+			var fileSelect = document.getElementById('file-select');
+			var uploadButton = document.getElementById('upload-button');
+			uploadForm.onsubmit = function(event) {
+				  event.preventDefault();
+				  var files = fileSelect.files;
+				  var full_path = window.location.hash.substr(1);
+				  for (var i = 0; i < files.length; i++) {
+				  	console.log(files[i]);
+					client.writeFile(files[i].name, files[i],function(){});
+				  }
+				  
+				  
+}
         });
     </script>
     
@@ -40,6 +55,10 @@
         <div class="row">
             <div class="list-group"></div>
         </div>
+		<form id="upload-form">
+			<input type="file" id="file-select" multiple/>
+  			<button type="submit" id="upload-button">Upload</button>
+		</form>
     </div>
 
     <!--ELEMENT FOR WAITING-->

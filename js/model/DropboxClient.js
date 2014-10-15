@@ -1,6 +1,6 @@
 function DropboxClient() {
 
-    var appKey = 'vahra3f0bhvq3pu';
+    var appKey = 'k6jv516vh01q1h5';
     var client = new Dropbox.Client({ key: appKey });
 
     this.authentificate = function auth() {
@@ -48,5 +48,24 @@ function DropboxClient() {
                     on_success(content,stat);
                 }
             });
+    }
+	
+	this.writeFile = function (full_path, data, on_success) {
+//		client.writeFile(full_path, data, undefined, 
+//				function (error, stat) {
+//					if (error) {
+//						alert('Book reading error: ' + error);
+//					} else {
+//						on_success(stat);
+//					}
+//            })
+		client.writeFile('cl\/hello.txt', 'Hello, World!', 
+				function (error, stat) {
+					if (error) {
+						alert('Book reading error: ' + error);
+					} else {
+						on_success(stat);
+					}
+            })
     }
 }
