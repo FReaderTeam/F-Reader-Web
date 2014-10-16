@@ -23,23 +23,23 @@
     <!--Page script-->
     <script>
         $( document ).ready(function() {
+			// List filling.
             var client = new DropboxClient();
             client.authentificate();
             client.findFb2Files(new BookLibraryView().fillBookList);
 			
+			// Uploading stuff.
 			var uploadForm = document.getElementById('upload-form');
 			var fileSelect = document.getElementById('file-select');
 			var uploadButton = document.getElementById('upload-button');
 			uploadForm.onsubmit = function(event) {
 				  event.preventDefault();
 				  var files = fileSelect.files;
-				  var full_path = window.location.hash.substr(1);
+				  var full_path = 'FReaderBooks/';
 				  for (var i = 0; i < files.length; i++) {
 				  	console.log(files[i]);
-					client.writeFile(files[i].name, files[i],function(){});
-				  }
-				  
-				  
+					client.writeFile(full_path + files[i].name, files[i],function(){});
+				  }		  
 }
         });
     </script>

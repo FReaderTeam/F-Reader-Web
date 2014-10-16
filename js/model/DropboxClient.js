@@ -1,7 +1,8 @@
 function DropboxClient() {
 
-    var appKey = 'k6jv516vh01q1h5';
+    var appKey = 'jcyec8tqzehdwe9';
     var client = new Dropbox.Client({ key: appKey });
+	var extensions = ['.fb2', '.fb2.zip'];
 
     this.authentificate = function auth() {
         client.authenticate({ interactive: true }, function (error, client) {
@@ -50,22 +51,26 @@ function DropboxClient() {
             });
     }
 	
+	this.checkExtensions = function(file) {
+		for (var i = 0; i < extensions.length; i++) {
+			if (new RegExp(extensions[i] + '$').test(file.name)) {
+				return true;
+			}
+		}
+		alert('Error: bad file extension');
+		return false;
+	}
+	
 	this.writeFile = function (full_path, data, on_success) {
-//		client.writeFile(full_path, data, undefined, 
-//				function (error, stat) {
-//					if (error) {
-//						alert('Book reading error: ' + error);
-//					} else {
-//						on_success(stat);
-//					}
-//            })
-		client.writeFile('cl\/hello.txt', 'Hello, World!', 
+		if (this.checkExtensions(data)) {
+		client.writeFile(full_path, data, undefined, 
 				function (error, stat) {
 					if (error) {
-						alert('Book reading error: ' + error);
+						alert('Book writing error: ' + error);
 					} else {
 						on_success(stat);
 					}
-            })
+            });
+		}
     }
 }
