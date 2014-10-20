@@ -17,6 +17,11 @@
     <script src="js/model/DropboxClient.js"></script>
     <script src="js/model/Book.js"></script>
     <script src="js/model/Parser.js"></script>
+	<!--zip.js scripts-->
+	<script src="lib/zip/inflate.js"></script>
+	<script src="lib/zip/deflate.js"></script>
+	<script src="lib/zip/zip.js"></script>
+	
 	<script src="js/model/PositionFinder.js"></script>
 	
     <script src="lib/jquery.xslt.js"></script>
@@ -31,7 +36,7 @@
             var client = new DropboxClient();
             client.authentificate();
             var full_path = window.location.hash.substr(1);
-            client.readFile(full_path, new BookView().show);
+            client.readBook(full_path, new BookView().show);
 			
 			var posFinder = new PositionFinder();
 			$( window ).scroll(function() {
