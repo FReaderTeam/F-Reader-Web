@@ -1,131 +1,91 @@
 <html>
 <head>
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-    
+
     <!--JQuery-->
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    
+
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap-filestyle.min.js"> </script>
-    
+    <script type="text/javascript" src="js/bootstrap-filestyle.min.js"> </script>
+
     <!--Dropbox API-->
     <script src="https://www.dropbox.com/static/api/dropbox-datastores-1.2-latest.js" type="text/javascript"></script>
-    
+
     <!--Authorization script-->
     <script src="js/model/DropboxClient.js"></script>
     <script src="js/view/BookLibraryView.js"></script>
 
     <!--CSS-->
     <link rel="stylesheet" href="css/waiting.css">
-	
-	<style>
-		.btn-file {
-    		position: relative;
-    		overflow: hidden;
-		}
-		.btn-file input[type=file] {
-			position: absolute;
-			top: 0;
-			right: 0;
-			min-width: 100%;
-			min-height: 100%;
-			font-size: 100px;
-			text-align: right;
-			filter: alpha(opacity=0);
-			opacity: 0;
-			outline: none;
-			background: white;
-			cursor: inherit;
-			display: block;
-		}
-		.info {
-			width:200px;
-			height:20px;
-			height:auto;
-			position:absolute;
-			left:50%;
-			margin-left:-100px;
-			bottom:10px;
-			background-color: #383838;
-			color: #F0F0F0;
-			font-family: Calibri;
-			font-size: 20px;
-			padding:10px;
-			text-align:center;
-			border-radius: 2px;
-			-webkit-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
-			-moz-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
-			box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
-		}
-	</style>
+    <link rel="stylesheet" href="css/book_collection.css">
 
     <!--Page script-->
     <script>
         $( document ).ready(function() {
-			// List filling.
+            // List filling.
             var client = new DropboxClient();
             client.authentificate();
             client.findFb2Files(new BookLibraryView().fillBookList);
-			
-			// Uploading stuff.
-			//window.uploadResults = [];
-			var uploadForm = document.getElementById('upload-form');
-			var fileSelect = document.getElementById('file-select');
-			var uploadButton = document.getElementById('upload-button');
-			var uploads_count = 0;
-			uploadForm.onsubmit = function(event) {
-				  event.preventDefault();
-				  var files = fileSelect.files;
-				  var full_path = 'FReaderBooks/';
-					$(document).bind("upload_done",
-        				function(){
-							if (uploads_count == files.length) {
-            					location.reload();
-							}
-        				}
-        			);
-				  for (var i = 0; i < files.length; i++) {
-				  	console.log(files[i]);
-					client.writeFile(full_path + files[i].name, files[i],
-						function(fileName, requestState){
-							uploads_count++;
-							$(document).trigger('upload_done');
-							// Uploading status pop-up.
-							$( ".info" ).html(fileName);
-							$('.info').stop().fadeIn(400).delay(3000).fadeOut(400);
-						});
-				  }
-}
+
+            // Uploading stuff.
+            //window.uploadResults = [];
+            var uploadForm = document.getElementById('upload-form');
+            var fileSelect = document.getElementById('file-select');
+            var uploadButton = document.getElementById('upload-button');
+            var uploads_count = 0;
+            uploadForm.onsubmit = function(event) {
+                event.preventDefault();
+                var files = fileSelect.files;
+                var full_path = 'FReaderBooks/';
+                $(document).bind("upload_done",
+                        function(){
+                            if (uploads_count == files.length) {
+                                location.reload();
+                            }
+                        }
+                );
+                for (var i = 0; i < files.length; i++) {
+                    console.log(files[i]);
+                    client.writeFile(full_path + files[i].name, files[i],
+                            function(fileName, requestState){
+                                uploads_count++;
+                                $(document).trigger('upload_done');
+                                // Uploading status pop-up.
+                                $( ".info" ).html(fileName);
+                                $('.info').stop().fadeIn(400).delay(3000).fadeOut(400);
+                            });
+                }
+            }
         });
     </script>
-    
+
 </head>
 <body class="loading">
-    <div class="container">
-        <div class="row">
-            <div class="page-header">
-                <span class="h2">All my books:</span>
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="page-header">
+            <span class="h2">All my books:</span>
         </div>
-        <div class="row">
-            <div class="list-group"></div>
-        </div>
-		<div class="row">
-			<form id="upload-form">
-				<!--span class="btn btn-default btn-file"-->
-				<span class="btn">
-		Browse... <input type="file" id="file-select" accept=".fb2,.fb2.zip" multiple/>
-				</span>
-				<button type="submit" id="upload-button" class="btn btn-default">Upload</button>
-			</form>
-		</div>
-		<div class='info' style='display:none'>lol</div>
     </div>
+    <div class="row">
+        <div class="list-group"></div>
+    </div>
+    <div class="row">
+        <form id="upload-form">
+            <!--span class="btn btn-default btn-file"-->
+            <span class="btn">
+                <input type="file" id="file-select" accept=".fb2,.fb2.zip" multiple/>
+            </span>
+            <button type="submit" id="upload-button" class="btn btn-default">Upload</button>
+        </form>
+    </div>
+    <div class='info' style='display:none'>lol</div>
+</div>
 
-    <!--ELEMENT FOR WAITING-->
-    <div class="waiting_modal"></div>
+<!--ELEMENT FOR WAITING-->
+<div class="waiting_modal"></div>
 </body>
 </html>

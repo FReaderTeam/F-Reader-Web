@@ -1,5 +1,5 @@
 function PositionFinder () {
-	
+
     // Check whether element is in viewport (e.g. visible for user)
     function _isNodeVisible(el){
         var top = el.offsetTop;

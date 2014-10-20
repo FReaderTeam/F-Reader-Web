@@ -13,42 +13,53 @@
     <!--Dropbox API-->
     <script src="https://www.dropbox.com/static/api/dropbox-datastores-1.2-latest.js" type="text/javascript"></script>
 
+    <!--zip.js scripts-->
+    <script src="lib/zip/inflate.js"></script>
+    <script src="lib/zip/deflate.js"></script>
+    <script src="lib/zip/zip.js"></script>
+
     <!--Fetching script-->
     <script src="js/model/DropboxClient.js"></script>
     <script src="js/model/Book.js"></script>
     <script src="js/model/Parser.js"></script>
-	<!--zip.js scripts-->
-	<script src="lib/zip/inflate.js"></script>
-	<script src="lib/zip/deflate.js"></script>
-	<script src="lib/zip/zip.js"></script>
-	
-	<script src="js/model/PositionFinder.js"></script>
-	
     <script src="lib/jquery.xslt.js"></script>
     <script src="js/view/BookView.js"></script>
-	
+    <script src="js/model/PositionInstaller.js"></script>
+    <script src="js/model/PositionDao.js"></script>
+    <script src="js/model/PositionFinder.js"></script>
     <!--CSS-->
     <link rel="stylesheet" href="css/book_reading.css">
     <link rel="stylesheet" href="css/waiting.css">
 
     <script>
+        var client = new DropboxClient();
+        client.authentificate();
+        var _datastore;
         $( document ).ready(function() {
-            var client = new DropboxClient();
-            client.authentificate();
             var full_path = window.location.hash.substr(1);
-            client.readBook(full_path, new BookView().show);
-			
-			var posFinder = new PositionFinder();
-			$( window ).scroll(function() {
-		console.log(posFinder.findCurrentChapterAndPosition());
-			});
+            client.getDatastore(
+                function(datastore){
+                    var positionDao = new PositionDao(datastore);
+                    var posFinder = new PositionFinder();
+                    var timer;
+                    _datastore = datastore
+                    $( window ).scroll(function() {
+                        if ( timer ) clearTimeout(timer);
+                        timer = setTimeout(function(){
+                            var position = posFinder.findCurrentChapterAndPosition();
+                            console.log(position);
+                            positionDao.savePosition(position.section,position.position,full_path);
+                        }, 200);
+                    });
+                    client.readBook(full_path, new BookView().show);
+                }
+            );
         });
-		
     </script>
 
 </head>
 <body class="loading">
-    <div class="b-reading" id="read_div"></div>
+    <div class="b-reading"></div>
     <!--ELEMENT FOR WAITING-->
     <div class="waiting_modal"></div>
 </body>
