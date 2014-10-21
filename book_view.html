@@ -33,9 +33,9 @@
 
     <script>
         var client = new DropboxClient();
-        client.authentificate();
+        client.authentificate(onSuccessComplete);
         var _datastore;
-        $( document ).ready(function() {
+        function onSuccessComplete() {
             var full_path = window.location.hash.substr(1);
             client.getDatastore(
                 function(datastore){
@@ -54,7 +54,7 @@
                     client.readBook(full_path, new BookView().show);
                 }
             );
-        });
+        };
     </script>
 
 </head>

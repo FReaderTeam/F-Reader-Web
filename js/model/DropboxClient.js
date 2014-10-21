@@ -6,13 +6,14 @@ function DropboxClient() {
 
     var _this = this;
 
-    this.authentificate = function auth() {
+    this.authentificate = function auth(success) {
         client.authenticate({ interactive: true }, function (error, client) {
             if (error) {
                 console.log('Authentication error: ' + error);
             }
             else {
                 console.log('User has successfully authorized.');
+                success();
             }
         });
     }
@@ -123,9 +124,6 @@ function DropboxClient() {
     }
 
     this.getDatastore = function(callback){
-        if(!_this.isAuthenticated()){
-            _this.authentificate();
-        }
         var manager = client.getDatastoreManager();
         manager.openDefaultDatastore(function(error, datastore){
             // TODO create normal error handler
