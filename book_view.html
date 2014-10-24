@@ -23,39 +23,18 @@
     <script src="js/model/Book.js"></script>
     <script src="js/model/Parser.js"></script>
     <script src="lib/jquery.xslt.js"></script>
-    <script src="js/view/BookView.js"></script>
+    
+	<!--Model-->
     <script src="js/model/PositionInstaller.js"></script>
     <script src="js/model/PositionDao.js"></script>
     <script src="js/model/PositionFinder.js"></script>
+	
+	<!--Page's logic-->
+	<script src="js/view/BookView.js"></script>
+	
     <!--CSS-->
     <link rel="stylesheet" href="css/book_reading.css">
     <link rel="stylesheet" href="css/waiting.css">
-
-    <script>
-        var client = new DropboxClient();
-        client.authentificate(onSuccessComplete);
-        var _datastore;
-        function onSuccessComplete() {
-            var full_path = window.location.hash.substr(1);
-            client.getDatastore(
-                function(datastore){
-                    var positionDao = new PositionDao(datastore);
-                    var posFinder = new PositionFinder();
-                    var timer;
-                    _datastore = datastore
-                    $( window ).scroll(function() {
-                        if ( timer ) clearTimeout(timer);
-                        timer = setTimeout(function(){
-                            var position = posFinder.findCurrentChapterAndPosition();
-                            console.log(position);
-                            positionDao.savePosition(position.section,position.position,full_path);
-                        }, 200);
-                    });
-                    client.readBook(full_path, new BookView().show);
-                }
-            );
-        };
-    </script>
 
 </head>
 <body class="loading">
