@@ -1,3 +1,9 @@
+.controls {
+	right: 5px;
+	position: fixed;
+    z-index: 999;
+}
+
 .b-reading {
     font-style: normal;
 
@@ -25,7 +31,7 @@ i {
 
 .FictionBook {
     display: block;
-}
+}	
 
 .FictionBook .description {
     display: none;

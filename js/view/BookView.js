@@ -38,6 +38,21 @@ function onSuccessComplete() {
 	);
 }
 
+function changeFontSize(delta) {
+	var fontSize = parseInt($('.b-reading .b-reading-book').css('font-size')) + delta;
+	
+	$('.b-reading .b-reading-book').css('font-size', (fontSize) + 'px');
+	$('#fontValue').html('Font size: ' + fontSize + 'px');
+}
+
+function fontSizeIncrease() {
+	changeFontSize(3);
+}
+
+function fontSizeDecrease() {
+	changeFontSize(-3);
+}
+
 var client = new DropboxClient();
 client.authentificate(onSuccessComplete);
 var _datastore;
