@@ -7,7 +7,7 @@ function PositionDao(datastore){
         var positionTable = datastore.getTable(PositionDao.table_name);
         var results = positionTable.query({bookFullPath: bookPath});
         if(results.length == 1){
-            results[0].paragraph = paragraph_number;
+            results[0].set("paragraph",paragraph_number);
         }
         else {
             var position = {
