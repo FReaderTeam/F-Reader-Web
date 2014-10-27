@@ -1,6 +1,6 @@
 function DropboxClient() {
 
-    var appKey = 'vahra3f0bhvq3pu';
+    var appKey = '5562h0w5xy70afy';
     var client = new Dropbox.Client({ key: appKey });
     var extensions = ['.fb2', '.fb2.zip'];
 
@@ -35,7 +35,8 @@ function DropboxClient() {
                     filesMetadata[i] = {
                         path: file_stats[i].path,
                         name: file_stats[i].name,
-                        size: file_stats[i].size
+                        size: file_stats[i].size,
+						date: file_stats[i].modifiedAt
                     };
                 }
                 on_success(filesMetadata);

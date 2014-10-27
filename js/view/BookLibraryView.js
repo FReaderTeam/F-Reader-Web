@@ -1,5 +1,11 @@
 function BookLibraryView() {
     this.fillBookList  = function(books) {
+		books.sort(
+			function(a, b) {
+				if(a.date > b.date) return -1;
+    			if(a.date < b.date) return 1;
+    			return 0;
+			});
         for (var i = 0; i < books.length; i++) {
             var bookName = books[i].name;
             var bookPath = books[i].path;
