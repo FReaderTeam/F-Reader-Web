@@ -1,18 +1,15 @@
 function Parser(){
 
+    // Create book object from string representation of fb2 file
     this.getBookFromXml = function(fb2_file_string){
         var book_xml = $.parseXML(fb2_file_string);
         var $book_dom = $(book_xml);
-        var book  = createBookModel($book_dom,fb2_file_string);
-        return book;
+        return createBookModel($book_dom,fb2_file_string);
     }
 
-    /*
-     * Extract Book essence from XML file in FB2 format
-     * */
+    // Extract Book essence from XML file in FB2 format
     function createBookModel($dom,fb2_file_string) {
         var book_result = new Book();
-
         book_result.string_book_xml = fb2_file_string;
         book_result.title = $dom.find('description').find('book-title').text();
 
@@ -29,9 +26,7 @@ function Parser(){
         return book_result;
     };
 
-    /*
-     * Form cover image in DataURI format
-     *  */
+    // Form cover image in DataURI format
     function imageDataURI($image) {
         if($image) {
             return "data:"+$image.attr('content-type')+';base64,'+$image.text();
@@ -40,6 +35,7 @@ function Parser(){
         }
     };
 
+    // Extracts image from binary section of xml file
     function extractCoverImage(xml) {
         var $xml = $(xml);
 
@@ -47,11 +43,8 @@ function Parser(){
         var $coverpage1 = $xml.find('image');
 
         var getCoverImage = function(coverpage) {
-
             var coverId;
-
             if (coverpage && coverpage.length) {
-
                 for (var i=0; i < coverpage[0].attributes.length; i++) {
                     if(coverpage[0].attributes[i].localName == 'href') {
                         coverId = coverpage[0].attributes[i].nodeValue;
@@ -61,12 +54,10 @@ function Parser(){
                         break;
                     }
                 }
-
                 if(coverId) {
                     var $binarySections = $xml.find('binary');
                     return $binarySections.filter("[id='" + coverId + "']");
                 }
-
             }
             return null;
         };
@@ -75,4 +66,5 @@ function Parser(){
         var cp = ($coverpage0 && $coverpage0.length) ? $coverpage0 : (($coverpage1 && $coverpage1.length) ? $coverpage1 : null);
         return getCoverImage(cp);
     };
+
 }

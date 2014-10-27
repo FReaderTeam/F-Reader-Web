@@ -1,24 +1,31 @@
 function PositionDao(datastore){
 
-    this.savePosition = function(section, paragrah,bookPath){
-        var positionTable = datastore.getTable('position');
-        var results = positionTable.query({bookPath: bookPath});
-        for(var i = 0; i < results.length; i++){
-            results[i].deleteRecord();
+    PositionDao.table_name = 'position_android';
+
+    // saves current position in the book to drobpox datastore
+    this.savePosition = function(paragraph_number, bookPath){
+        var positionTable = datastore.getTable(PositionDao.table_name);
+        var results = positionTable.query({bookFullPath: bookPath});
+        if(results.length == 1){
+            results[0].paragraph = paragraph_number;
         }
-        var lastUserPosition = positionTable.insert({
-            bookPath: bookPath,
-            section: section,
-            paragraph: paragrah
-        });
+        else {
+            var position = {
+                bookFullPath: bookPath,
+                paragraph: paragraph_number
+            };
+            positionTable.insert(position);
+        }
     }
 
+    // obtain paragraph number that was installed for particular book
     this.getLastSavedPosition = function(bookPath){
-        var positionTable = datastore.getTable('position');
-        var results = positionTable.query({bookPath: bookPath});
+        var positionTable = datastore.getTable(PositionDao.table_name);
+        var results = positionTable.query({bookFullPath: bookPath});
         if(results.length == 0){
-            return {section : 0, paragraph: 0};
+            return 0;
         }
-        return {section : results[0].get("section"), paragraph: results[0].get("paragraph")};
+        return results[0].get("paragraph");
     }
+
 }

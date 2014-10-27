@@ -1,6 +1,6 @@
 function DropboxClient() {
 
-    var appKey = '5562h0w5xy70afy';
+    var appKey = 'vahra3f0bhvq3pu';
     var client = new Dropbox.Client({ key: appKey });
     var extensions = ['.fb2', '.fb2.zip'];
 
@@ -135,10 +135,6 @@ function DropboxClient() {
             _this.datastore = datastore;
             callback(datastore);
         });
-    }
-
-    this.closeDatastore = function(){
-        _this.datastore.close();
     }
 
 }

@@ -7,12 +7,7 @@ function BookView() {
         document.addEventListener("DOMNodeInserted",function(){
             var full_path = window.location.hash.substr(1);
             var position = new PositionDao(window._datastore).getLastSavedPosition(full_path);
-            if(!position){
-                new PositionInstaller().setPosition(0,0);
-            }
-            else{
-                new PositionInstaller().setPosition(position.section,position.paragraph);
-            }
+            new PositionInstaller().setPosition(position);
         });
     }
 }
@@ -28,9 +23,9 @@ function onSuccessComplete() {
 			$( window ).scroll(function() {
 				if ( timer ) clearTimeout(timer);
 				timer = setTimeout(function(){
-					var position = posFinder.findCurrentChapterAndPosition();
-					console.log(position);
-					positionDao.savePosition(position.section,position.position,full_path);
+					var position = posFinder.findCurrentAbsoluteParagraph();
+					console.log(full_path + " " + position);
+					positionDao.savePosition(position,full_path);
 				}, 200);
 			});
 			client.readBook(full_path, new BookView().show);

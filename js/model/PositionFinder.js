@@ -1,6 +1,6 @@
 function PositionFinder () {
 
-    // Check whether element is in viewport (e.g. visible for user)
+    // Check if element is visible for user
     function _isNodeVisible(el){
         var top = el.offsetTop;
         var left = el.offsetLeft;
@@ -21,45 +21,20 @@ function PositionFinder () {
             );
     };
 
-    // Estimate position of currently reading text in the book (Chapter and Paragraph)
-    this.findCurrentChapterAndPosition = function() {
-
-        var visible_section = undefined,
-            vis_section_idx = undefined;
-
-        var $sections = $(".section");
-        $sections.removeClass("visible");
-
-        // iteratively search for currently visible section (chapter)
-        $sections.each(function(index, item){
+    // Find number of first paragraph that is visible for user
+    this.findCurrentAbsoluteParagraph = function(){
+        var paragraph_index = undefined;
+        var $paragraphs = $(".p");
+        $paragraphs.removeClass("visible");
+        $paragraphs.each(function(index, item) {
             var is_visible = _isNodeVisible(item);
             if(is_visible) {
-                vis_section_idx = index;
-                visible_section = $(this);
-                visible_section.addClass("visible");
-                return false; // stop iterating
+                paragraph_index = index;
+                var current_par = $(this);
+                current_par.addClass("visible");
+                return false;
             }
         });
-
-        // determ first current visible paragraph inside current visible section
-        var current_par = undefined, current_par_idx = undefined;
-        if(visible_section) {
-            var $para = $(".p", visible_section);
-            $para.removeClass("visible");
-            $para.each(function(index, item){
-                var is_visible = _isNodeVisible(item);
-                if(is_visible) {
-                    current_par_idx = index;
-                    current_par = $(this);
-                    current_par.addClass("visible");
-
-                    return false; // stop iterating
-                }
-            });
-        }
-
-        if(vis_section_idx >= 0 && current_par_idx >= 0) {
-            return { section : vis_section_idx, position : current_par_idx };
-        }
+        return paragraph_index;
     };
 }

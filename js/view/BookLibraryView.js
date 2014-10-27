@@ -19,40 +19,41 @@ function BookLibraryView() {
     }
 }
 
-$( document ).ready(function() {
-            // List filling.
-            var client = new DropboxClient();
-			client.authentificate(onSuccessComplete);
-            function onSuccessComplete() {
-                client.findFb2Files(new BookLibraryView().fillBookList);
-            }
+$(document).ready(function() {
+    // List filling.
+    var client = new DropboxClient();
+    client.authentificate(onSuccessComplete);
+    function onSuccessComplete() {
+        client.findFb2Files(new BookLibraryView().fillBookList);
+    }
 
-            // Uploading stuff.
-            var uploadForm = document.getElementById('upload-form');
-            var fileSelect = document.getElementById('file-select');
-            var uploadButton = document.getElementById('upload-button');
-            var uploads_count = 0;
-            uploadForm.onsubmit = function(event) {
-                event.preventDefault();
-                var files = fileSelect.files;
-                var full_path = 'FReaderBooks/';
-                $(document).bind("upload_done",
-                        function(){
-                            if (uploads_count == files.length) {
-                                location.reload();
-                            }
-                        }
-                );
-                for (var i = 0; i < files.length; i++) {
-                    console.log(files[i]);
-                    client.writeFile(full_path + files[i].name, files[i],
-                            function(fileName, requestState){
-                                uploads_count++;
-                                $(document).trigger('upload_done');
-                                // Uploading status pop-up.
-                                $( ".info" ).html(fileName);
-                                $('.info').stop().fadeIn(400).delay(3000).fadeOut(400);
-                            });
+    // Uploading stuff.
+    var uploadForm = document.getElementById('upload-form');
+    var fileSelect = document.getElementById('file-select');
+    var uploadButton = document.getElementById('upload-button');
+    var uploads_count = 0;
+
+    uploadForm.onsubmit = function(event) {
+        event.preventDefault();
+        var files = fileSelect.files;
+        var full_path = 'FReaderBooks/';
+        $(document).bind("upload_done",
+                function(){
+                    if (uploads_count == files.length) {
+                        location.reload();
+                    }
                 }
-            }
-        });
+        );
+        for (var i = 0; i < files.length; i++) {
+            console.log(files[i]);
+            client.writeFile(full_path + files[i].name, files[i],
+                    function(fileName, requestState){
+                        uploads_count++;
+                        $(document).trigger('upload_done');
+                        // Uploading status pop-up.
+                        $( ".info" ).html(fileName);
+                        $('.info').stop().fadeIn(400).delay(3000).fadeOut(400);
+                    });
+        }
+    }
+});
