@@ -1,3 +1,19 @@
+.controlsArrow.visible {
+    background-image:url("../img/ArrowR.png");
+}
+
+.controlsArrow {   
+    background-image:url("../img/ArrowL.png");
+    right: 88px;
+    top: 65px;
+    position: fixed;
+    z-index: 999;
+
+     width:11px;
+     height:11px;
+
+}
+
 .controls {
 	right: 5px;
 	position: fixed;

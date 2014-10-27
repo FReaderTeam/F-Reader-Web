@@ -48,6 +48,24 @@ function fontSizeDecrease() {
 	changeFontSize(-3);
 }
 
+function controlSlide(){
+	var arrow = $('.controlsArrow');	
+	if(arrow.attr('class')==="controlsArrow visible") {
+		arrow.fadeOut();
+		$('.controls').animate({'right':'-100px'}, 600, function(){
+			arrow.toggleClass("visible");
+		});
+		arrow.animate({'right':'5px'}, function(){arrow.fadeIn();});
+	}
+	else {
+		arrow.fadeOut();
+		$('.controls').animate({'right':'5px'}, 600, function(){
+			arrow.toggleClass("visible");
+		});
+		arrow.animate({'right':'88px'}, function(){arrow.fadeIn();});
+	}
+}
+
 var client = new DropboxClient();
 client.authentificate(onSuccessComplete);
 var _datastore;
