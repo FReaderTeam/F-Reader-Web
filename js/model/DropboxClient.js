@@ -17,6 +17,10 @@ function DropboxClient() {
             }
         });
     }
+	
+	this.logOut = function() {
+		client.signOff();
+	}
 
     this.isAuthenticated = function () {
         return client.isAuthenticated();
@@ -135,6 +139,17 @@ function DropboxClient() {
             _this.datastore = datastore;
             callback(datastore);
         });
+    }
+	
+	this.removeFile = function(path){
+        client.remove(path, 
+			function(error, stat) {
+				if (error) {
+                        alert('Book writing error: ' + error);
+                    } else {
+						$(document).trigger('deleting_done');
+                    }
+			});
     }
 
 }

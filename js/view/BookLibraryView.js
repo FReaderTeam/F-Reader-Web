@@ -1,4 +1,5 @@
 function BookLibraryView() {
+	var _this = this;
     this.fillBookList  = function(books) {
 		books.sort(
 			function(a, b) {
@@ -11,9 +12,9 @@ function BookLibraryView() {
             var bookPath = books[i].path;
             var bookSize = books[i].size;
             $(".list-group")
-                .append("<a href=\"book_view.html#" + books[i].path + "\" " +
+                .append("<div><a href=\"book_view.html#" + books[i].path + "\" " +
                     "class=\"list-group-item\"" +
-                    " onclick=\"openBook(this)\">" + books[i].name + "</a>");
+                    " onclick=\"openBook(this)\">" + books[i].name + "</a><button" + " onclick=\"document.client.removeFile(\'" + books[i].path + "\')\" class=\"btn btn-default\"" + ">x</button></div>");
         }
         $("body").removeClass("loading");
     }
@@ -22,6 +23,17 @@ function BookLibraryView() {
 $(document).ready(function() {
     // List filling.
     var client = new DropboxClient();
+	
+	// Relatively shitty code down there
+	document.client = client;
+	
+	$(document).bind("deleting_done",
+                function(){
+                	location.reload();
+                }
+        );
+	// Shitty code has ended
+	
     client.authentificate(onSuccessComplete);
     function onSuccessComplete() {
         client.findFb2Files(new BookLibraryView().fillBookList);
