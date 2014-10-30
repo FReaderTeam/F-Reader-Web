@@ -48,21 +48,29 @@ function fontSizeDecrease() {
 	changeFontSize(-3);
 }
 
+function sidebarGlowing(){
+	$('.sidebar').toggleClass("glowing");
+}
+
 function controlSlide(){
-	var arrow = $('.controlsArrow');	
-	if(arrow.attr('class')==="controlsArrow visible") {
-		arrow.fadeOut();
-		$('.controls').animate({'right':'-100px'}, 600, function(){
-			arrow.toggleClass("visible");
+	var sidebar = $('.sidebar');
+	var controls = $('.controls');	
+	if(sidebar.attr('class').indexOf("visible")!=-1) {
+		sidebar.fadeOut();
+		controls.animate({'right':'-100px'}, 600, function(){
+			sidebar.toggleClass("control-visible");
 		});
-		arrow.animate({'right':'5px'}, function(){arrow.fadeIn();});
+		setTimeout(function(){sidebar.fadeIn()},600);
+		
 	}
+
 	else {
-		arrow.fadeOut();
-		$('.controls').animate({'right':'5px'}, 600, function(){
-			arrow.toggleClass("visible");
+		sidebar.fadeOut();
+		controls.animate({'right':'5px'}, 600, function(){
+			sidebar.toggleClass("control-visible");
 		});
-		arrow.animate({'right':'88px'}, function(){arrow.fadeIn();});
+		setTimeout(function(){sidebar.fadeIn()},600);
+
 	}
 }
 

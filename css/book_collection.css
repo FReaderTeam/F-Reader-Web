@@ -1,3 +1,14 @@
+.list-group-item{
+    display: inline-block;
+    width: 96%;
+}
+
+.btn-del{
+    display: inline;
+    margin-left: 0.7%;
+    margin-bottom:0.3%;
+}
+
 .btn-file {
     position: relative;
     overflow: hidden;

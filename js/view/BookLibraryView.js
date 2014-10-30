@@ -14,7 +14,7 @@ function BookLibraryView() {
             $(".list-group")
                 .append("<div><a href=\"book_view.html#" + books[i].path + "\" " +
                     "class=\"list-group-item\"" +
-                    " onclick=\"openBook(this)\">" + books[i].name + "</a><button" + " onclick=\"document.client.removeFile(\'" + books[i].path + "\')\" class=\"btn btn-default\"" + ">x</button></div>");
+                    " onclick=\"openBook(this)\">" + books[i].name + "</a><button" + " onclick=\"document.client.removeFile(\'" + books[i].path + "\')\" class=\"btn-del btn btn-default\"" + ">x</button></div>");
         }
         $("body").removeClass("loading");
     }
