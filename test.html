@@ -1,0 +1,80 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/qunit-1.15.0.css" type="text/css"/>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://www.dropbox.com/static/api/dropbox-datastores-1.2-latest.js" type="text/javascript"></script>
+
+    <script src="lib/test/qunit-1.15.0.js"></script>
+
+    <script src="js/model/DropboxClient.js"></script>
+
+    <script type="text/javascript">
+        QUnit.test("Authentication test (positive)", function (assert) {
+            var client = new DropboxClient();
+            client.authentificate(function () {});
+            assert.ok(client.isAuthenticated(), "Passed!");
+        });
+        QUnit.test("Authentication test (negative)", function (assert) {
+            var client = new DropboxClient();
+            assert.ok(!client.isAuthenticated(), "Passed!");
+        });
+        QUnit.asyncTest("FindFb2Files test", function (assert) {
+            var client = new DropboxClient();
+            client.authentificate(function () {});
+
+            client.findFb2Files(function (res_files) {
+                for (var i = 0; i < res_files.length; i++) {
+                    assert.ok(new RegExp('.fb2$').test(res_files[i].name), res_files[i].name + ' has passed.');
+                }
+                QUnit.start();
+            })
+        });
+        QUnit.test("checkExtensions test", function (assert) {
+            var client = new DropboxClient();
+            client.authentificate(function () {});
+
+            assert.ok(client.checkExtensions({name:'book1.fb2'}), 'Passed!');
+            assert.ok(client.checkExtensions({name:'book1.fb2.zip'}), 'Passed!');
+            assert.ok(!client.checkExtensions({name:'book1'}), 'Passed!');
+            assert.ok(!client.checkExtensions({name:'fb2.rar'}), 'Passed!');
+        });
+        QUnit.asyncTest("writeFile test", function (assert) {
+            var client = new DropboxClient();
+            client.authentificate(function () {});
+
+            var fileDir = '/testBooks/';
+            var fileName = 'book.fb2';
+            var file = new File([], fileName, {});
+
+            client.writeFile(fileDir + fileName, file, function (path, state) {
+                assert.ok(state, 'Passed!');
+                QUnit.start();
+            })
+            client.removeFile(fileDir + fileName);
+        });
+        QUnit.asyncTest("removeFile test", function (assert) {
+            var client = new DropboxClient();
+            client.authentificate(function () {});
+
+            var fileDir = '/testBooks/';
+            var fileName = 'book.fb2';
+            var file = new File([], fileName, {});
+
+            client.writeFile(fileDir + fileName, file, function (path, state) {
+                assert.ok(state, 'Passed!');
+                QUnit.start();
+            })
+            client.removeFile(fileDir + fileName);
+        });
+    </script>
+</head>
+<body>
+<h1 id="qunit-header">QUnit example</h1>
+
+<h2 id="qunit-banner"></h2>
+
+<h2 id="qunit-userAgent"></h2>
+<ol id="qunit-tests">
+</ol>
+</body>
+</html>

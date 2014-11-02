@@ -35,7 +35,7 @@ function DropboxClient() {
                     return;
                 }
                 var filesMetadata = [];
-                for (i = 0; i < file_stats.length; i++) {
+                for (var i = 0; i < file_stats.length; i++) {
                     filesMetadata[i] = {
                         path: file_stats[i].path,
                         name: file_stats[i].name,
@@ -111,7 +111,7 @@ function DropboxClient() {
                 return true;
             }
         }
-        alert('Error: bad file extension');
+        console.log('Error: bad file extension');
         return false;
     }
 
