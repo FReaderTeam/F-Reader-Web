@@ -7,6 +7,10 @@
     <script src="lib/test/qunit-1.15.0.js"></script>
 
     <script src="js/model/DropboxClient.js"></script>
+    
+    <!-- Parser test  -->
+    <script src="js/model/Parser.js"></script>
+    <script src="js/model/Book.js"></script>
 
     <script type="text/javascript">
         QUnit.test("Authentication test (positive)", function (assert) {
@@ -65,6 +69,19 @@
                 QUnit.start();
             })
             client.removeFile(fileDir + fileName);
+        });
+        QUnit.asyncTest("parser test", function (assert) {
+            var client = new DropboxClient();
+            client.authentificate(function () {});
+            client.findFb2Files(function (res_files) {
+                client.readBook(res_files[0].path, function(book_xml){
+                    var book = new Parser().getBookFromXml(book_xml);
+                    assert.ok(book.cover!=undefined, 'Passed!');
+                    assert.ok(book.string_book_xml!=undefined, 'Passed!');
+                    assert.ok(book.authors!=undefined, 'Passed!');                    
+                    QUnit.start();
+                })
+            })
         });
     </script>
 </head>
