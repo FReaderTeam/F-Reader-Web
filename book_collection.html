@@ -30,25 +30,40 @@
 
 </head>
 <body>
+<!--HEADER-->
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand">F-READER</a>
+    </div>
+    <form class="navbar-form navbar-input-group" id="adding_file_form">
+        <div class="form-group">
+            <input type="file" id="file-select" name="files[]" accept=".fb2,.fb2.zip" multiple/>
+        </div>
+        <button id="add_book_button" class="btn btn-default">Add book</button>
+    </form>
+</nav>
+
+<!--PAGE CONTENT-->
 <div class="container">
     <div class="row">
-        <div class="page-header">
-            <span class="h2">My books:</span>
-        </div>
+        <ul class="list-group">
+            <li id="list-header" class="list-group-item active h2">
+                My books:
+            </li>
+        </ul>
     </div>
-    <div class="row">
-        <div class="list-group"></div>
-    </div>
-    <div class="row">
-        <form id="upload-form">
-            <span class="btn">
-                <input type="file" id="file-select" accept=".fb2,.fb2.zip" multiple/>
-            </span>
-            <button type="submit" id="upload-button" class="btn btn-default">Upload</button>
-        </form>
-    </div>
-    <div class='info' style='display:none'>lol</div>
 </div>
+
+<!--ELEMENT FOR POP UP-->
+<div class='info' style='display:none'></div>
 
 <!--ELEMENT FOR WAITING-->
 <div class="waiting_modal"></div>

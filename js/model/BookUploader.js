@@ -1,15 +1,26 @@
 function BookUploader(client) {
 
-//    CONSTRUCTOR
-    var uploadForm = document.getElementById('upload-form');
-    var fileInput = document.getElementById('file-select');
+    $("#add_book_button").click(function () {
+        $("#file-select").click();
+    });
+
+    $('#file-select').change(function () {
+        $('#adding_file_form').submit();
+    });
+
     var uploads_count = 0;
     var dropboxClient = client;
     var FULL_PATH = 'FReaderBooks/';
+    var uploadForm = document.getElementById('adding_file_form');
+    var fileInput = document.getElementById('file-select');
 
     uploadForm.onsubmit = function (event) {
         event.preventDefault();
         var files = fileInput.files;
+        if (files.length == 0) {
+            return;
+        }
+        LoadingView.showLoading();
         setUpTrigger(files.length);
         uploadBooks(files);
     }

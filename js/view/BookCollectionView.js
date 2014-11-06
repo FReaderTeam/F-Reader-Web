@@ -1,4 +1,4 @@
-var BookCollectionViewUtils = {
+var BookCollectionView = {
 
     fillBookList: function (books) {
         var bookList = new BooksList(books);
