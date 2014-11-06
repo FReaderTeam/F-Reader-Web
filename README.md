@@ -1,3 +1,4 @@
 F-Reader-Web
 ============
-v.0.3
+F-READER-WEB is a part of F-Reader project that are developed
+by group on KNURE students.

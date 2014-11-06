@@ -34,7 +34,6 @@ function onSuccessComplete() {
 
 function changeFontSize(delta) {
 	var fontSize = parseInt($('.b-reading .b-reading-book').css('font-size')) + delta;
-	
 	$('.b-reading .b-reading-book').css('font-size', (fontSize) + 'px');
 	$('#fontValue').html('Font size: ' + fontSize + 'px');
 }

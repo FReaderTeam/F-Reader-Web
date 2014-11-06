@@ -30,7 +30,7 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
+    background: url(../img/top_banner.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -87,12 +87,12 @@ h6 {
     letter-spacing: 2px;
 }
 
-.content-section-a {
+.content-section-picture_right {
     padding: 50px 0;
     background-color: #f8f8f8;
 }
 
-.content-section-b {
+.content-section-picture_left {
     padding: 50px 0;
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
@@ -111,7 +111,7 @@ h6 {
 .banner {
     padding: 150px 0;
     color: #f8f8f8;
-    background: url(../img/banner-bg.jpg) no-repeat center center;
+    background: url(../img/bottom_banner.jpg) no-repeat center center;
     background-size: cover;
 }
 

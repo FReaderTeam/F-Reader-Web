@@ -1,10 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b34ade73-e262-40cc-8bbf-f0e93758ff27" name="Default" comment="" />
+    <list default="true" id="b34ade73-e262-40cc-8bbf-f0e93758ff27" name="Default" comment="refactoring">
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\css\font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\css\font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\fonts\FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\fonts\fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\fonts\fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\fonts\fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\fonts\fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\less\bordered-pulled.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\less\core.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\less\fixed-width.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\less\font-awesome.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\less\icons.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\less\larger.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\less\list.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\less\mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\less\path.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\less\rotated-flipped.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\less\spinning.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\less\stacked.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\less\variables.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\scss\_bordered-pulled.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\scss\_core.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\scss\_fixed-width.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\scss\_icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\scss\_larger.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\scss\_list.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\scss\_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\scss\_path.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\scss\_rotated-flipped.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\scss\_spinning.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\scss\_stacked.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\scss\_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\font-awesome-4.1.0\scss\font-awesome.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\fonts\glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\fonts\glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\fonts\glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\img\ArrowL.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\img\ArrowR.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\img\Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\img\android.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\img\cloud.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\img\different_platforms.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\lib\zip\deflate.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\lib\zip\inflate.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\lib\zip\mime-types.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\lib\zip\zip-ext.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\lib\zip\zip-fs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\lib\zip\zip.js" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\img\banner-bg.jpg" afterPath="$PROJECT_DIR$/img/bottom_banner.jpg" />
+      <change type="MOVED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\img\intro-bg.jpg" afterPath="$PROJECT_DIR$/img/top_banner.jpg" />
+      <change type="MOVED" beforePath="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\js\view\BookLibraryView.js" afterPath="$PROJECT_DIR$/js/view/BookCollectionView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/view/BookView.js" afterPath="$PROJECT_DIR$/js/view/BookView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/book_collection.html" afterPath="$PROJECT_DIR$/book_collection.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/book_reading.css" afterPath="$PROJECT_DIR$/css/book_reading.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/book_view.html" afterPath="$PROJECT_DIR$/book_view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/landing-page.css" afterPath="$PROJECT_DIR$/css/landing-page.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/public.iml" afterPath="$PROJECT_DIR$/.idea/public.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="public.iws" />
     <ignored path=".idea/workspace.xml" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <file path="/Dummy.txt" changelist="b34ade73-e262-40cc-8bbf-f0e93758ff27" time="1415287585339" ignored="false" />
+    <file path="/book_reading.css" changelist="b34ade73-e262-40cc-8bbf-f0e93758ff27" time="1415285273464" ignored="false" />
+    <file path="/BookView.js" changelist="b34ade73-e262-40cc-8bbf-f0e93758ff27" time="1415285301468" ignored="false" />
+    <file path="/README.md" changelist="b34ade73-e262-40cc-8bbf-f0e93758ff27" time="1415287430017" ignored="false" />
+    <file path="/index.html" changelist="b34ade73-e262-40cc-8bbf-f0e93758ff27" time="1415287224517" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,47 +94,134 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PositionUtils.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/model/PositionUtils.js">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
-              <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+            <state line="142" column="17" selection-start="5508" selection-end="5508" vertical-scroll-proportion="-12.423077">
+              <folding>
+                <element signature="tag#head#0;tag#html#0" expanded="false" />
+                <element signature="e#897#1112#0" expanded="false" />
+                <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#3;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#4;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#footer#0;tag#body#0;tag#html#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookCollectionView.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/view/BookCollectionView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="8" selection-start="37" selection-end="37" vertical-scroll-proportion="0.05120482">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="book_view.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="landing-page.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/landing-page.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="94" column="0" selection-start="1592" selection-end="1592" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap-filestyle.min.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/bootstrap-filestyle.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.xslt.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/jquery.xslt.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="book_collection.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/book_collection.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="3" selection-start="661" selection-end="661" vertical-scroll-proportion="-8.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="33" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="28" selection-start="447" selection-end="447" vertical-scroll-proportion="-7.1923075">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="book_view.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/book_view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46815833" vertical-offset="85" max-vertical-offset="1020">
-              <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+            <state line="40" column="18" selection-start="1323" selection-end="1323" vertical-scroll-proportion="-26.153847">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BookView.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/view/BookView.js">
+      <file leaf-file-name="jquery-1.11.0.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/jquery-1.11.0.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1445">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
+    <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/model/PositionUtils.js" />
         <option value="$PROJECT_DIR$/book_view.html" />
+        <option value="$PROJECT_DIR$/css/book_reading.css" />
         <option value="$PROJECT_DIR$/js/view/BookView.js" />
+        <option value="$PROJECT_DIR$/img/Thumbs.db" />
+        <option value="$PROJECT_DIR$/book_collection.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -87,12 +244,15 @@
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
-      <showLibraryContents />
+      <showLibraryContents ProjectPane="true" />
       <hideEmptyPackages />
       <abbreviatePackageNames />
       <autoscrollToSource />
@@ -115,6 +275,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="books" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -160,74 +352,109 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <method />
-    </configuration>
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
-      <setting name="preferredDebugBrowser" value="Chrome" />
+      <setting name="preferredDebugBrowser" value="CHROME" />
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+    <configuration default="true" type="XSLT" factoryName="XSLT">
+      <option name="myOutputFile" />
+      <option name="myOpenOutputFile" value="false" />
+      <option name="myOpenInBrowser" value="false" />
+      <option name="mySmartErrorHandling" value="true" />
+      <option name="myRunnerPort" value="34873" />
+      <option name="myVmArguments" />
+      <option name="myWorkingDirectory" />
+      <option name="myModule" />
+      <option name="myJdk" />
+      <parameters />
+      <OutputType value="CONSOLE" save-to-file="false" />
+      <FileType name="XML" />
+      <JdkChoice value="FROM_MODULE" />
       <method />
     </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
       <method />
     </configuration>
-    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
-      <option name="cucumberJsArguments" value="" />
-      <option name="executablePath" />
-      <option name="filePath" />
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b34ade73-e262-40cc-8bbf-f0e93758ff27" name="Default" comment="" />
       <created>1415281172360</created>
-      <option name="number" value="Default" />
       <updated>1415281172360</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32876712" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24944155" sideWeight="0.6712329" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -244,38 +471,175 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
     <option name="myTodoPanelSettings">
-      <TodoPanelSettings />
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
     </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="refactoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
-    <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/model/PositionUtils.js">
+    <entry file="file://$PROJECT_DIR$/img/top_banner.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/book_reading.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        <state line="25" column="10" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/view/BookView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1445">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state line="43" column="28" selection-start="1427" selection-end="1427" vertical-scroll-proportion="1.3562152">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/bootstrap-filestyle.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/jquery-1.11.0.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/jquery.xslt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/book_collection.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="3" selection-start="661" selection-end="661" vertical-scroll-proportion="-8.5">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/book_view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46815833" vertical-offset="85" max-vertical-offset="1020">
-          <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+        <state line="40" column="18" selection-start="1323" selection-end="1323" vertical-scroll-proportion="-26.153847">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/landing-page.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="0" selection-start="1592" selection-end="1592" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="33" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="28" selection-start="447" selection-end="447" vertical-scroll-proportion="-7.1923075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="142" column="17" selection-start="5508" selection-end="5508" vertical-scroll-proportion="-12.423077">
+          <folding>
+            <element signature="tag#head#0;tag#html#0" expanded="false" />
+            <element signature="e#897#1112#0" expanded="false" />
+            <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#3;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#4;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#footer#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/view/BookCollectionView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="8" selection-start="37" selection-end="37" vertical-scroll-proportion="0.05120482">
           <folding />
         </state>
       </provider>
     </entry>
   </component>
 </project>
+
