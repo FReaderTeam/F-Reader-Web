@@ -2,6 +2,7 @@
 <head>
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!--JQuery-->
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 
@@ -11,43 +12,39 @@
     <!--Dropbox API-->
     <script src="https://www.dropbox.com/static/api/dropbox-datastores-1.2-latest.js" type="text/javascript"></script>
 
-    <!--zip.js scripts-->
-    <script src="lib/zip/inflate.js"></script>
-    <script src="lib/zip/deflate.js"></script>
-    <script src="lib/zip/zip.js"></script>
-
     <!--Fetching script-->
     <script src="js/model/DropboxClient.js"></script>
     <script src="js/model/Book.js"></script>
     <script src="js/model/Parser.js"></script>
     <script src="lib/jquery.xslt.js"></script>
-    
+
     <!--Model-->
     <script src="js/model/PositionDao.js"></script>
     <script src="js/model/PositionUtils.js"></script>
-    
+
     <!--Page's logic-->
     <script src="js/view/BookView.js"></script>
-    
+
     <!--CSS-->
     <link rel="stylesheet" href="css/book_reading.css">
     <link rel="stylesheet" href="css/waiting.css">
 
 </head>
 <body class="loading">
-    <div class='controls'>
-        <div id="fontValue">
-            Font size: 14px
-        </div>
-        <button id="fontPlus" class="btn btn-default" onclick="fontSizeIncrease()">+</button>
-        <button id="fontMinus" class="btn btn-default" onclick="fontSizeDecrease()">-</button>
-        <div>
-            <button id="logOut" class="btn btn-default" onclick="logOut()">Exit</button>
-        </div>
+<div class='controls'>
+    <div id="fontValue">
+        Font size: 14px
     </div>
-    <div class="sidebar control-visible" onclick="controlSlide()" onmouseover="sidebarGlowing()" onmouseout="sidebarGlowing()"></div>
-    <div class="b-reading"></div>
-    <!--ELEMENT FOR WAITING-->
-    <div class="waiting_modal"></div>
+    <button id="fontPlus" class="btn btn-default" onclick="fontSizeIncrease()">+</button>
+    <button id="fontMinus" class="btn btn-default" onclick="fontSizeDecrease()">-</button>
+    <div>
+        <button id="logOut" class="btn btn-default" onclick="logOut()">Exit</button>
+    </div>
+</div>
+<div class="sidebar control-visible" onclick="controlSlide()" onmouseover="sidebarGlowing()"
+     onmouseout="sidebarGlowing()"></div>
+<div class="b-reading"></div>
+<!--ELEMENT FOR WAITING-->
+<div class="waiting_modal"></div>
 </body>
 </html>

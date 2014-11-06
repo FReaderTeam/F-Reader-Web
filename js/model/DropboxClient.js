@@ -17,10 +17,10 @@ function DropboxClient() {
             }
         });
     }
-	
-	this.logOut = function() {
-		client.signOff();
-	}
+
+    this.logOut = function () {
+        client.signOff();
+    }
 
     this.isAuthenticated = function () {
         return client.isAuthenticated();
@@ -29,7 +29,6 @@ function DropboxClient() {
     this.findFb2Files = function (on_success) {
         client.findByName('', '.fb2', '',
             function (error, file_stats) {
-                // TODO modify exception handler
                 if (error) {
                     alert(error);
                     return;
@@ -40,14 +39,14 @@ function DropboxClient() {
                         path: file_stats[i].path,
                         name: file_stats[i].name,
                         size: file_stats[i].size,
-						date: file_stats[i].modifiedAt
+                        date: file_stats[i].modifiedAt
                     };
                 }
                 on_success(filesMetadata);
             });
     }
 
-    this.readBook = function(full_path, on_success) {
+    this.readBook = function (full_path, on_success) {
         if (new RegExp('.fb2.zip$').test(full_path)) {
             this.readFb2Zip(full_path, on_success);
         }
@@ -63,49 +62,49 @@ function DropboxClient() {
                 if (error) {
                     alert('Book reading error: ' + error);
                 } else {
-                    on_success(content,stat);
+                    on_success(content, stat);
                 }
             });
     }
 
     this.readFb2Zip = function (full_path, on_success) {
         // TODO modify exception handler
-        client.readFile(full_path, { 'blob':true },
+        client.readFile(full_path, { 'blob': true },
             function (error, content, stat) {
                 if (error) {
                     alert('Book reading error: ' + error);
                 } else {
                     // Hardcoded relative 'inflate.js' path.
                     zip.workerScriptsPath = '/spa/pl1nwdjuq0bvnzo/F-Reader/public/lib/zip/';
-                    zip.createReader(new zip.BlobReader(content), function(reader) {
+                    zip.createReader(new zip.BlobReader(content), function (reader) {
                         // get all entries from the zip
-                        reader.getEntries(function(entries) {
+                        reader.getEntries(function (entries) {
                             if (entries.length) {
 
                                 // get first entry content as text
-                                entries[0].getData(new zip.TextWriter(), function(text) {
+                                entries[0].getData(new zip.TextWriter(), function (text) {
                                     // text contains the entry data as a String
-                                    on_success(text,stat);
+                                    on_success(text, stat);
                                     console.log(text);
 
                                     // close the zip reader
-                                    reader.close(function() {
+                                    reader.close(function () {
                                         // onclose callback
                                     });
 
-                                }, function(current, total) {
+                                }, function (current, total) {
                                     // onprogress callback
                                 });
                             }
                         });
-                    }, function(error) {
+                    }, function (error) {
                         // onerror callback
                     });
                 }
             });
     }
 
-    this.checkExtensions = function(file) {
+    this.checkExtensions = function (file) {
         for (var i = 0; i < extensions.length; i++) {
             if (new RegExp(extensions[i] + '$').test(file.name)) {
                 return true;
@@ -128,11 +127,11 @@ function DropboxClient() {
         }
     }
 
-    this.getDatastore = function(callback){
+    this.getDatastore = function (callback) {
         var manager = client.getDatastoreManager();
-        manager.openDefaultDatastore(function(error, datastore){
+        manager.openDefaultDatastore(function (error, datastore) {
             // TODO create normal error handler
-            if(error){
+            if (error) {
                 alert('Error opening default datastore: ' + error);
                 return;
             }
@@ -140,16 +139,16 @@ function DropboxClient() {
             callback(datastore);
         });
     }
-	
-	this.removeFile = function(path){
-        client.remove(path, 
-			function(error, stat) {
-				if (error) {
-                        alert('Book writing error: ' + error);
-                    } else {
-						$(document).trigger('deleting_done');
-                    }
-			});
+
+    this.removeFile = function (path) {
+        client.remove(path,
+            function (error, stat) {
+                if (error) {
+                    alert('Book writing error: ' + error);
+                } else {
+                    $(document).trigger('deleting_done');
+                }
+            });
     }
 
 }
