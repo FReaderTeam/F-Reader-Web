@@ -22,33 +22,4 @@ function BookView() {
     }
 }
 
-function sidebarGlowing() {
-    $('.sidebar').toggleClass("glowing");
-}
-
-function controlSlide() {
-    var sidebar = $('.sidebar');
-    var controls = $('.controls');
-    if (sidebar.attr('class').indexOf("visible") != -1) {
-        sidebar.fadeOut();
-        controls.animate({'right': '-100px'}, 600, function () {
-            sidebar.toggleClass("control-visible");
-        });
-        setTimeout(function () {
-            sidebar.fadeIn()
-        }, 600);
-
-    }
-
-    else {
-        sidebar.fadeOut();
-        controls.animate({'right': '5px'}, 600, function () {
-            sidebar.toggleClass("control-visible");
-        });
-        setTimeout(function () {
-            sidebar.fadeIn()
-        }, 600);
-
-    }
-}
 

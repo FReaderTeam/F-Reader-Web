@@ -25,6 +25,11 @@ i {
     margin: -60px 0 0; /* negative fixed header height */
 }
 
+.dropdown-menu {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
 .FictionBook {
     display: block;
 }
