@@ -1,39 +1,14 @@
-.sidebar.control-visible {
-    top: 97px;
-}
-
-.sidebar.glowing {
-    background-color: #E1E7ED;  
-}
-
-.sidebar { 
-    right: 0px;
-    top: 0px;
-    position: fixed;
-    z-index: 999;
-    width:105px;
-    height:100%;
-
-}
-
-.controls {
-	right: 5px;
-	position: fixed;
-    z-index: 999;
-    background-color: white;
-}
-
 .b-reading {
     font-style: normal;
     font-size: 14px;
-    max-width: 58em;    /* for the better reading */
+    max-width: 58em; /* for the better reading */
     margin: auto;
     line-height: 2em;
 }
 
 body {
     margin: 0;
-    padding: 0% 2%;
+    padding-top: 50px;
     background-color: white;
     color: gray;
     font-family: Helvetica;
@@ -43,9 +18,16 @@ i {
     font-style: normal;
 }
 
+.anchor:before {
+    content: "";
+    display: block;
+    height: 60px; /* fixed header height*/
+    margin: -60px 0 0; /* negative fixed header height */
+}
+
 .FictionBook {
     display: block;
-}	
+}
 
 .FictionBook .description {
     display: none;
@@ -55,9 +37,8 @@ i {
     display: block;
 }
 
-.FictionBook .body .title {
-    display: block;
-    font-size: 130%;
+.FictionBook .body > .title {
+    display: none;
 }
 
 .FictionBook .body .title > .p {
@@ -88,7 +69,7 @@ i {
     padding: 1em;
     background-color: #eee;
     font-size: 95%;
-    border-left:4px solid #aaa;
+    border-left: 4px solid #aaa;
     margin: 0.8em 0;
 }
 

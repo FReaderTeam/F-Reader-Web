@@ -5,7 +5,5 @@ $(document).ready(function () {
         client.findFb2Files(BookCollectionView.fillBookList);
         document.bookUploader = new BookUploader(client);
         document.bookRemover = new BookRemover(client);
-
-
     });
 });

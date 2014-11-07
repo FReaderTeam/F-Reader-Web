@@ -8,6 +8,9 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="lib/bootstrap.js"></script>
+    <script src="lib/bootstrap-filestyle.min.js"></script>
 
     <!--Dropbox API-->
     <script src="https://www.dropbox.com/static/api/dropbox-datastores-1.2-latest.js" type="text/javascript"></script>
@@ -26,6 +29,7 @@
     <script src="js/view/BookView.js"></script>
     <script src="js/controller/BookViewController.js"></script>
     <script src="js/model/TextPreferences.js"></script>
+    <script src="js/view/SectionList.js"></script>
 
     <!--CSS-->
     <link rel="stylesheet" href="css/book_reading.css">
@@ -33,15 +37,45 @@
 
 </head>
 <body class="loading">
-<div class='controls'>
-    <div id="fontValue">
-        Font size: 14px
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <ul class="nav navbar-nav navbar-left">
+            <li>
+                <a href="book_collection.html"><span class="glyphicon glyphicon-arrow-left"></span> Back to
+                    collection</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="glyphicon glyphicon-font"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li>
+                        <a class="text-center" onclick="TextPreferences.fontSizeIncrease()">a+</a>
+                    </li>
+                    <li>
+                        <a class="text-center" onclick="TextPreferences.fontSizeDecrease()">a-</a>
+                    </li>
+
+                    <li class="divider"></li>
+                    <li>
+                        <a id="fontValue">Font size : 14 px</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a id='sections-button' class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="glyphicon glyphicon-book"></span>
+                </a>
+                <ul id="sections" class="dropdown-menu" role="menu">
+
+                </ul>
+            </li>
+        </ul>
     </div>
-    <button id="fontPlus" class="btn btn-default" onclick="TextPreferences.fontSizeIncrease()">+</button>
-    <button id="fontMinus" class="btn btn-default" onclick="TextPreferences.fontSizeDecrease()">-</button>
-</div>
-<div class="sidebar control-visible" onclick="controlSlide()" onmouseover="sidebarGlowing()"
-     onmouseout="sidebarGlowing()"></div>
+</nav>
 <div class="b-reading"></div>
 <!--ELEMENT FOR WAITING-->
 <div class="waiting_modal"></div>
