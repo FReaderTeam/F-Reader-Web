@@ -24,6 +24,8 @@
 
     <!--Page's logic-->
     <script src="js/view/BookView.js"></script>
+    <script src="js/controller/BookViewController.js"></script>
+    <script src="js/model/TextPreferences.js"></script>
 
     <!--CSS-->
     <link rel="stylesheet" href="css/book_reading.css">
@@ -35,11 +37,8 @@
     <div id="fontValue">
         Font size: 14px
     </div>
-    <button id="fontPlus" class="btn btn-default" onclick="fontSizeIncrease()">+</button>
-    <button id="fontMinus" class="btn btn-default" onclick="fontSizeDecrease()">-</button>
-    <div>
-        <button id="logOut" class="btn btn-default" onclick="logOut()">Exit</button>
-    </div>
+    <button id="fontPlus" class="btn btn-default" onclick="TextPreferences.fontSizeIncrease()">+</button>
+    <button id="fontMinus" class="btn btn-default" onclick="TextPreferences.fontSizeDecrease()">-</button>
 </div>
 <div class="sidebar control-visible" onclick="controlSlide()" onmouseover="sidebarGlowing()"
      onmouseout="sidebarGlowing()"></div>
