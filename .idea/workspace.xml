@@ -4,15 +4,12 @@
     <option name="ANALYSIS_IN_BACKGROUND" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b34ade73-e262-40cc-8bbf-f0e93758ff27" name="Default" comment="refactoring">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/waiting.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Thumbs.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/waiting.css" afterPath="$PROJECT_DIR$/css/waiting.css" />
+    <list default="true" id="b34ade73-e262-40cc-8bbf-f0e93758ff27" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="public.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="b34ade73-e262-40cc-8bbf-f0e93758ff27" time="1415366743528" ignored="false" />
+    <file path="/Dummy.txt" changelist="b34ade73-e262-40cc-8bbf-f0e93758ff27" time="1415367133742" ignored="false" />
     <file path="/book_reading.css" changelist="b34ade73-e262-40cc-8bbf-f0e93758ff27" time="1415360382009" ignored="false" />
     <file path="/BookView.js" changelist="b34ade73-e262-40cc-8bbf-f0e93758ff27" time="1415362279087" ignored="false" />
     <file path="/README.md" changelist="b34ade73-e262-40cc-8bbf-f0e93758ff27" time="1415287430017" ignored="false" />
@@ -63,7 +60,7 @@
       <file leaf-file-name="waiting.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/waiting.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="29" selection-start="515" selection-end="515" vertical-scroll-proportion="0.44320297">
+            <state line="13" column="65" selection-start="479" selection-end="479" vertical-scroll-proportion="0.41154563">
               <folding />
             </state>
           </provider>
@@ -447,7 +444,11 @@
       <created>1415366766515</created>
       <updated>1415366766515</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="link on brand added">
+      <created>1415367135499</created>
+      <updated>1415367135499</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -525,7 +526,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="overflow sections bug fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="link on brand added" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -546,6 +547,7 @@
     <MESSAGE value="negative font size bug fix&#10;refactoring" />
     <MESSAGE value="refactor reading ui&#10;add jump by tittle&#10;change navigation&#10;" />
     <MESSAGE value="overflow sections bug fix" />
+    <MESSAGE value="link on brand added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -658,7 +660,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/waiting.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="29" selection-start="515" selection-end="515" vertical-scroll-proportion="0.44320297">
+        <state line="13" column="65" selection-start="479" selection-end="479" vertical-scroll-proportion="0.41154563">
           <folding />
         </state>
       </provider>
