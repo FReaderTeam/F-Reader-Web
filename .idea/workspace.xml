@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b34ade73-e262-40cc-8bbf-f0e93758ff27" name="Default" comment="refactoring">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/waiting.gif" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Thumbs.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/view/BookView.js" afterPath="$PROJECT_DIR$/js/view/BookView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/book_collection.html" afterPath="$PROJECT_DIR$/book_collection.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/book_reading.css" afterPath="$PROJECT_DIR$/css/book_reading.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/book_view.html" afterPath="$PROJECT_DIR$/book_view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/waiting.css" afterPath="$PROJECT_DIR$/css/waiting.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="public.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="b34ade73-e262-40cc-8bbf-f0e93758ff27" time="1415365192335" ignored="false" />
+    <file path="/Dummy.txt" changelist="b34ade73-e262-40cc-8bbf-f0e93758ff27" time="1415366743528" ignored="false" />
     <file path="/book_reading.css" changelist="b34ade73-e262-40cc-8bbf-f0e93758ff27" time="1415360382009" ignored="false" />
     <file path="/BookView.js" changelist="b34ade73-e262-40cc-8bbf-f0e93758ff27" time="1415362279087" ignored="false" />
     <file path="/README.md" changelist="b34ade73-e262-40cc-8bbf-f0e93758ff27" time="1415287430017" ignored="false" />
@@ -33,6 +31,7 @@
     <file path="/BookCollectionController.js" changelist="b34ade73-e262-40cc-8bbf-f0e93758ff27" time="1415313790698" ignored="false" />
     <file path="/TextPreferences.js" changelist="b34ade73-e262-40cc-8bbf-f0e93758ff27" time="1415353036343" ignored="false" />
     <file path="/SectionList.js" changelist="b34ade73-e262-40cc-8bbf-f0e93758ff27" time="1415364374022" ignored="false" />
+    <file path="/waiting.css" changelist="b34ade73-e262-40cc-8bbf-f0e93758ff27" time="1415366927293" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,10 +51,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="book_collection.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="book_collection.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/book_collection.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="31" selection-start="1758" selection-end="1758" vertical-scroll-proportion="0.36790606">
+            <state line="44" column="31" selection-start="1758" selection-end="1758" vertical-scroll-proportion="-7.230769">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="waiting.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/waiting.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="29" selection-start="515" selection-end="515" vertical-scroll-proportion="0.44320297">
               <folding />
             </state>
           </provider>
@@ -64,7 +72,7 @@
       <file leaf-file-name="book_view.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/book_view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="38" selection-start="2252" selection-end="2252" vertical-scroll-proportion="-18.961538">
+            <state line="59" column="38" selection-start="2252" selection-end="2252" vertical-scroll-proportion="2.3076923">
               <folding />
             </state>
           </provider>
@@ -156,7 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/model/DropboxClient.js" />
         <option value="$PROJECT_DIR$/js/controllers.js" />
         <option value="$PROJECT_DIR$/js/model/BookRemover.js" />
         <option value="$PROJECT_DIR$/js/view/BookCollectionView.js" />
@@ -172,6 +179,7 @@
         <option value="$PROJECT_DIR$/js/view/BookView.js" />
         <option value="$PROJECT_DIR$/css/book_reading.css" />
         <option value="$PROJECT_DIR$/book_collection.html" />
+        <option value="$PROJECT_DIR$/css/waiting.css" />
       </list>
     </option>
   </component>
@@ -307,20 +315,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="fonts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -337,6 +331,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public\img" />
       <recent name="C:\Users\Nikita\Dropbox\Приложения\Static Web Apps\freader\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -448,7 +443,11 @@
       <created>1415365186436</created>
       <updated>1415365186436</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="overflow sections bug fix">
+      <created>1415366766515</created>
+      <updated>1415366766515</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -459,7 +458,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24944155" sideWeight="0.6712329" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42442292" sideWeight="0.6712329" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -526,7 +525,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor reading ui&#10;add jump by tittle&#10;change navigation&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="overflow sections bug fix" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -546,6 +545,7 @@
     <MESSAGE value="add button UI fix" />
     <MESSAGE value="negative font size bug fix&#10;refactoring" />
     <MESSAGE value="refactor reading ui&#10;add jump by tittle&#10;change navigation&#10;" />
+    <MESSAGE value="overflow sections bug fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -553,13 +553,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/waiting.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/view/BookCollectionView.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -651,14 +644,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/book_view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="38" selection-start="2252" selection-end="2252" vertical-scroll-proportion="-18.961538">
+        <state line="59" column="38" selection-start="2252" selection-end="2252" vertical-scroll-proportion="2.3076923">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/book_collection.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="31" selection-start="1758" selection-end="1758" vertical-scroll-proportion="0.36790606">
+        <state line="44" column="31" selection-start="1758" selection-end="1758" vertical-scroll-proportion="-7.230769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/waiting.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="29" selection-start="515" selection-end="515" vertical-scroll-proportion="0.44320297">
           <folding />
         </state>
       </provider>
