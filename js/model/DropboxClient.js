@@ -1,6 +1,6 @@
 function DropboxClient() {
 
-    var appKey = 'vahra3f0bhvq3pu';
+    var appKey = 'k3wrgzqc4uzpulv';
     var client = new Dropbox.Client({ key: appKey });
     var extensions = ['.fb2', '.fb2.zip'];
 
